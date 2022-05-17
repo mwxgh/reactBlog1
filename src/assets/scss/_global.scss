@@ -1,0 +1,94 @@
+.show {
+    display: block !important;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .logo {
+    width: $logo-width;
+    object-fit: cover;
+  }
+  
+  .divider {
+    width: 100%;
+    border-bottom: 1px solid $color-divider;
+  }
+  
+  .divider-vertical {
+    align-self: stretch;
+    min-width: 1px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: $color-divider;
+  }
+  
+  .text-underline {
+    text-decoration: underline !important;
+  }
+  
+  .border-none {
+    border: none !important;
+  }
+  
+  .border-left-none {
+    border-left: none !important;
+  }
+  
+  .border-right-none {
+    border-right: none !important;
+  }
+  
+  .border-top-none {
+    border-top: none !important;
+  }
+  
+  .border-bottom-none {
+    border-bottom: none !important;
+  }
+  
+  .list-style-circle {
+    list-style: circle !important;
+  }
+  
+  .list-style-disc {
+    list-style: disc !important;
+  }
+  
+  .list-style-square {
+    list-style: square !important;
+  }
+  
+  .list-style-decimal {
+    list-style: decimal !important;
+  }
+  
+  .pre-wrap {
+    white-space: pre-wrap !important;
+  }
+  
+  [style*='--aspect-ratio'] > :first-child {
+    width: 100%;
+  }
+  [style*='--aspect-ratio'] > img {
+    height: auto;
+  }
+  
+  @supports (--custom: property) {
+    [style*='--aspect-ratio'] {
+      position: relative;
+      overflow: hidden;
+    }
+    [style*='--aspect-ratio']::before {
+      content: '';
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    [style*='--aspect-ratio'] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  }

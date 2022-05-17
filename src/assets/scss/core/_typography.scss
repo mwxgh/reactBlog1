@@ -1,0 +1,41 @@
+$h6: 21px;
+$h5: 26px;
+$h4: 32px;
+$h3: 36px;
+$h2: 41px;
+$h1: 46px;
+
+$headingVariables: ($h1, $h2, $h3, $h4, $h5, $h6);
+
+@for $heading from 1 through length($headingVariables) {
+  .heading-#{$heading} {
+    font-size: nth($headingVariables, $heading);
+  }
+}
+
+[class^='heading'] {
+  font-weight: $fw-bold;
+}
+
+$text-tiny: 12px;
+$text-caption: 13px;
+$text-body-small: 14px;
+$text-body-medium: 16px;
+$text-body-large: 18px;
+$text-lead-2: 20px;
+$text-lead-1: 23px;
+
+$textVariables: (
+  tiny: $text-tiny,
+  caption: $text-caption,
+  small: $text-body-small,
+  large: $text-body-large,
+  lead-2: $text-lead-2,
+  lead-1: $text-lead-1,
+);
+
+@each $text, $size in $textVariables {
+  .text-#{$text} {
+    font-size: $size;
+  }
+}

@@ -1,0 +1,71 @@
+@mixin show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @mixin hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  @mixin line-limit($line) {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
+  
+  @mixin box($width, $height: $width, $border-radius: 0) {
+    width: $width;
+    height: $height;
+    @if $border-radius != 0 {
+      border-radius: $border-radius;
+    }
+  }
+  
+  @mixin flex($justify, $align, $direction: row, $wrap: nowrap, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    @if ($direction != row) {
+      flex-direction: $direction;
+    }
+    @if ($wrap != nowrap) {
+      flex-wrap: $wrap;
+    }
+    @if ($gap != 0) {
+      gap: $gap;
+    }
+  }
+  
+  @mixin inline-flex($justify, $align, $direction: row, $wrap: nowrap, $gap: 0) {
+    display: inline-flex;
+    justify-content: $justify;
+    align-items: $align;
+    @if ($direction != row) {
+      flex-direction: $direction;
+    }
+    @if ($wrap != nowrap) {
+      flex-wrap: $wrap;
+    }
+    @if ($gap != 0) {
+      gap: $gap;
+    }
+  }
+  
+  @mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+    @if $raw-query {
+      $query: if(
+        type-of($raw-query) == 'string',
+        unquote($raw-query),
+        inspect($raw-query)
+      );
+      @media #{$query} {
+        @content;
+      }
+    }
+  }
+  

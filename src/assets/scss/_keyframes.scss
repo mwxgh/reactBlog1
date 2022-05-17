@@ -1,0 +1,35 @@
+@keyframes custom-fade {
+  from {
+    @include hidden();
+  }
+  to {
+    @include show();
+  }
+}
+
+@keyframes custom-slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes custom-slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes custom-slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

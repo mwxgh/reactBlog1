@@ -1,0 +1,221 @@
+// Color variables
+$color-black: #000000;
+$color-white: #ffffff;
+$color-divider: #eaecf0;
+
+$color-primary-50: #fef6ee;
+$color-primary-100: #fdead7;
+$color-primary-200: #f9dbaf;
+$color-primary-300: #f7b27a;
+$color-primary-400: #f38744;
+$color-primary-500: #ef6820;
+$color-primary-600: #e04f16;
+$color-primary-700: #b93815;
+$color-primary-800: #932f19;
+$color-primary-900: #772917;
+
+$color-secondary-50: #eff4ff;
+$color-secondary-100: #d1e0ff;
+$color-secondary-200: #b2ccff;
+$color-secondary-300: #84adff;
+$color-secondary-400: #528bff;
+$color-secondary-500: #2970ff;
+$color-secondary-600: #155eef;
+$color-secondary-700: #004eeb;
+$color-secondary-800: #0040c1;
+$color-secondary-900: #00359e;
+
+$color-gray-50: #f9fafb;
+$color-gray-100: #f2f4f7;
+$color-gray-200: #eaecf0;
+$color-gray-300: #d0d5dd;
+$color-gray-400: #98a2b3;
+$color-gray-500: #667085;
+$color-gray-600: #475467;
+$color-gray-700: #344054;
+$color-gray-800: #1d2939;
+$color-gray-900: #101828;
+
+$color-green-50: #ecfdf3;
+$color-green-100: #d1fadf;
+$color-green-200: #a6f4c5;
+$color-green-300: #6ce9a6;
+$color-green-400: #32d583;
+$color-green-500: #12b76a;
+$color-green-600: #039855;
+$color-green-700: #027a48;
+$color-green-800: #05603a;
+$color-green-900: #054f31;
+
+$color-yellow-50: #fffaeb;
+$color-yellow-100: #fef0c7;
+$color-yellow-200: #fedf89;
+$color-yellow-300: #fec84b;
+$color-yellow-400: #fdb022;
+$color-yellow-500: #f79009;
+$color-yellow-600: #dc6803;
+$color-yellow-700: #b54708;
+$color-yellow-800: #93370d;
+$color-yellow-900: #7a2e0e;
+
+$color-red-50: #fef3f2;
+$color-red-100: #fee4e2;
+$color-red-200: #fecdca;
+$color-red-300: #f8a29b;
+$color-red-400: #f97066;
+$color-red-500: #f04438;
+$color-red-600: #d92d20;
+$color-red-700: #b42318;
+$color-red-800: #912018;
+$color-red-900: #7a271a;
+
+// Breakpoint variables
+$breakpoints: (
+  smallphone-and-down: '(max-width: 399px)',
+  phone-and-down: '(max-width: 575px)',
+  tablet-and-down: '(max-width: 767px)',
+  desktop-and-down: '(max-width: 991px)',
+  largedesktop-and-down: '(max-width: 1199px)',
+  extralarge-and-down: '(max-width: 1439px)',
+  smallphone-and-up: '(min-width: 400px)',
+  phone-and-up: '(min-width: 576px)',
+  tablet-and-up: '(min-width: 768px)',
+  desktop-and-up: '(min-width: 992px)',
+  largedesktop-and-up: '(min-width: 1200px)',
+  extralarge-and-up: '(min-width: 1440px)',
+);
+
+// Specific variables
+$sidebar-width: 248px;
+$header-height: 56px;
+$footer-height: 48px;
+$logo-width: 200px;
+
+// Path variables
+$img-path: '../assets/images/';
+
+// Box shadow variables
+$shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
+$shadow-sm: 0px 1px 3px rgba(16, 24, 40, 0.1),
+  0px 1px 2px rgba(16, 24, 40, 0.06);
+$shadow-md: 0px 4px 8px -2px rgba(16, 24, 40, 0.1),
+  0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+$shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+  0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+$shadow-xl: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+  0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+$shadow-2xl: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+$shadow-3xl: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+
+// Font weight variables;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+
+$fontWeightVariables: (
+  font-weight-light: 300,
+  font-weight-regular: 400,
+  font-weight-medium: 500,
+  font-weight-semibold: 600,
+  font-weight-bold: 700,
+  font-weight-extrabold: 800,
+);
+
+// Z-index variables
+$z-negative: -1;
+$z-elevate: 1;
+$z-sticky: 100;
+$z-drawer: 200;
+$z-dropdown: 400;
+$z-modal: 500;
+$z-popover: 500;
+$z-maximum: 9999;
+
+// Border radius variables
+$borderRadiusVariables: (
+  rounded-sm: 4px,
+  rounded-md: 6px,
+  rounded-lg: 8px,
+  rounded-xl: 12px,
+);
+
+// Text color variables
+$textColorVariables: (
+  black: $color-black,
+  white: $color-white,
+  gray-300: $color-gray-300,
+  gray-400: $color-gray-400,
+  gray-500: $color-gray-500,
+  gray-600: $color-gray-600,
+  gray-700: $color-gray-700,
+  gray-800: $color-gray-800,
+  gray-900: $color-gray-900,
+  primary-400: $color-primary-400,
+  primary-500: $color-primary-500,
+  primary-600: $color-primary-600,
+  primary-700: $color-primary-700,
+  primary-800: $color-primary-800,
+  secondary-400: $color-secondary-400,
+  secondary-500: $color-secondary-500,
+  secondary-600: $color-secondary-600,
+  secondary-700: $color-secondary-700,
+  secondary-800: $color-secondary-800,
+  green-400: $color-green-400,
+  green-500: $color-green-500,
+  green-600: $color-green-600,
+  green-700: $color-green-700,
+  green-800: $color-green-800,
+  yellow-400: $color-yellow-400,
+  yellow-500: $color-yellow-500,
+  yellow-600: $color-yellow-600,
+  yellow-700: $color-yellow-700,
+  yellow-800: $color-yellow-800,
+  red-400: $color-red-400,
+  red-500: $color-red-500,
+  red-600: $color-red-600,
+  red-700: $color-red-700,
+  red-800: $color-red-800,
+);
+
+// Background color variables
+$backgroundColorVariables: (
+  gray-100: $color-gray-100,
+  gray-200: $color-gray-200,
+  primary-100: $color-primary-100,
+  primary-200: $color-primary-200,
+  secondary-100: $color-secondary-100,
+  secondary-200: $color-secondary-200,
+  green-100: $color-green-100,
+  green-200: $color-green-200,
+  yellow-100: $color-yellow-100,
+  yellow-200: $color-yellow-200,
+  red-100: $color-red-100,
+  red-200: $color-red-200,
+);
+
+@each $borderRadius, $value in $borderRadiusVariables {
+  .#{$borderRadius} {
+    border-radius: $value !important;
+  }
+}
+
+@each $text, $color in $textColorVariables {
+  .color-#{$text} {
+    color: $color !important;
+  }
+}
+
+@each $text, $color in $backgroundColorVariables {
+  .background-#{$text} {
+    background-color: $color !important;
+  }
+}
+
+@each $fontweight, $weight in $fontWeightVariables {
+  .#{$fontweight} {
+    font-weight: $weight !important;
+  }
+}
